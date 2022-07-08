@@ -5,18 +5,38 @@
     <meta name="viewport" content="width=device-width">
     <meta charset="utf-8">
     <style>
+      html, body {
+        min-height: 100%;
+      }
+      
       body {
         display: flex;
         flex-direction: column;
-        gap: 90px;
         font-size: .875rem;
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
         text-align: center;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      body > * + * {
+        margin-top: 1em;
+      }
+      
+      img {
+        margin-bottom: 38px;
+      }
+      
+      a {
+        text-decoration: none;
+        background: linear-gradient(to right, #9790e3, #e58d85);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
     </style>
   </head>
   <body>
-    <img src="sensive.png" alt="Sensive" />
+    <img src="sensive.png" alt="Sensive" width="124" height="128" />
     <p><strong>Sensive</strong> was a platform designed to manage your creative projects and assets to help you get your work done.</p>
     <p>Check our next venture at <strong><a href="https://www.bleep.is/">Bleep</a></strong>.</p>
   </body>
